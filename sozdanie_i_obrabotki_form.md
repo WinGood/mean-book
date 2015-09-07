@@ -25,7 +25,7 @@ angular.module('firstApp', [])
                 color: vm.computerData.color,
                 nerdness: vm.computerData.nerdness
             });
-            // после того как компьютер был добавлен, очищаем список
+            // после того как компьютер был добавлен, очищаем данные из формы
             vm.computerData = {};
         };
     });

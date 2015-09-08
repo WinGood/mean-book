@@ -45,4 +45,17 @@ $('input').val('');
 И так с этим мы закончили, теперь приступим к созданию HTML формы и связывают ее с только что созданными функциями.
 
 ## HTML форма
+В файле **index.html** ниже кода с таблицей компьютеров, добавим следующий код:
+
+```
+<form class="form-inline" ng-submit="main.addComputer()"> <input type="text" class="form-control" placeholder="Macbook" ng-model="main.computerData.name">
+<input type="text" class="form-control" placeholder="Silver" ng-model="main.computerData.color">
+<input type="number" class="form-control" placeholder="8" ng-model="main.computerData.nerdness">
+<button type="submit" class="btn btn-success">Add</button> </form>
+```
+Мы имеем 3 разных инпута и одну кнопку отправки формы. Мы так же используем директиву **ng-model** для привязки каждого инпута с полем в объекте **computerData** который был создан в Angular контроллере.
+
+Познакомимся с новой директивой **ng-submit**. Эта директива используется в форме и она сообщает Angular что делать когда форма была отправлена. Мы сообщаем Angular что при отправки формы должна вызываться функция **addComputer()** которая определена в нашем контроллере.
+
+Вот как выглядит форма:
 

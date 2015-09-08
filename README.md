@@ -5,4 +5,4 @@
 
 ### Angular
 
-* [Создание и обработки форм](sozdanie_i_obrabotki_form.md)
+* [Создание и обработка форм](sozdanie_i_obrabotki_form.md)
